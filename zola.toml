@@ -1,16 +1,33 @@
-# The URL the site will be built for
 base_url = "https://blog.github.io"
-
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
-
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+title = "Shiqi's Blog"
+theme = "deepthought"
+default_language = "zh"
 
 [markdown]
-
 [markdown.highlighting]
+render = true
 theme = "catppuccin-mocha"
 
 [extra]
-# Put all your custom variables here
+# 必须定义为这种“语言包”嵌套格式
+navbar_items = [
+    { code = "zh", nav_items = [
+        { name = "首页", url = "/" },
+        { name = "博客", url = "/blog" },
+        { name = "关于", url = "/about" }
+    ]},
+    { code = "en", nav_items = [
+        { name = "Home", url = "/" },
+        { name = "Blog", url = "/blog" }
+    ]}
+]
+
+[extra.author]
+name = "Shiqi Lin"
+
+[extra.social]
+# github = "https://github.com/linshiqi"
+
+# 基础显示开关
+show_all_posts = true
+show_date = true
