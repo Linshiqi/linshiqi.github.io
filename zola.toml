@@ -1,4 +1,4 @@
-base_url = "https://linshiqi.github.io/blog"
+base_url = "https://linshiqi.github.io/"
 title = "Shiqi's Blog"
 theme = "deepthought"
 default_language = "zh"
