@@ -188,3 +188,6 @@ impl From<ParseError> for parse_error {
     }
 }
 ```
+
+## 参考文档
+https://rust-unofficial.github.io/patterns/idioms/ffi/errors.html
